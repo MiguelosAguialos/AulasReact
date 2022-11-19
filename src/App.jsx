@@ -10,9 +10,11 @@ export function App() {
       <Header/>
     <div className={styles.wrapper}>
       <Sidebar />
+      <div>
       <Post  author = 'Miguel' content = 'Teste'/>
       <Post  author = 'Miguel' content = 'Teste'/>
       <Post  author = 'Miguel' content = 'Teste'/>
+      </div>
     </div>
     </div>
   )
