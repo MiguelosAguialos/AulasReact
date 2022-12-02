@@ -1,25 +1,26 @@
-import { Post } from "../src/components/Post"
-import { Header } from "../src/components/Header"
-import { Sidebar } from "../src/components/Sidebar"
-import styles from './App.module.css'
-import './global.css'
+import { Post } from "./components/Post";
+import { Header } from "./components/Header";
+import { Sidebar } from "./components/Sidebar";
+
+import "./global.css";
+import styles from "./App.module.css";
 
 export function App() {
   return (
     <div>
-      <Header/>
-    <div className={styles.wrapper}>
-      <Sidebar />
-      <div>
-      <Post  author = 'Miguel' content = 'Teste'/>
-      <Post  author = 'Miguel' content = 'Teste'/>
-      <Post  author = 'Miguel' content = 'Teste'/>
+      <Header />
+      <div className={styles.wrapper}>
+        <Sidebar />
+        <div>
+          <Post author="Alef Jesus" content="Professor de DS44" />
+          <Post author="Eduardo" content="Estudante de React" />
+          <Post author="Rafael" content="To tentando entender" />
+
+        </div>
       </div>
     </div>
-    </div>
-  )
+  );
 }
-
 
 //JSX - Javascript + HTML
 //default exports vs named exports

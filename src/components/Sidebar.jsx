@@ -1,23 +1,29 @@
-import * as Icon from 'phosphor-react';
-import {CgProfile} from 'react-icons/cg';
-import styles from './Sidebar.module.css'
-export function Sidebar(){
-    return (
-        <div className={styles.sidebar}>
-            <img className={styles.cover} src="../src/assets/cover.jpg" />
+import { AppleLogo } from "phosphor-react";
+import { Avatar } from "./Avatar";
+import styles from "./Sidebar.module.css";
 
-            <div className={styles.profile}>
-                <img src="https://github.com/MiguelosAguialos.png" />
-                <strong>Miguel Aguiar</strong>
-                <span>Web Developer</span>
-            </div>
- 
-            <footer className={styles.sidebar.footer}>
-                <a target="_blanck" href="https://github.com/MiguelosAguialos">
-                    <CgProfile size="24px"/>
-                    Editar seu perfil
-                </a>
-            </footer>
-        </div>
-    );
+export function Sidebar() {
+  return (
+    <aside className={styles.sidebar}>
+      <img
+        className={styles.cover}
+        src="https://images.unsplash.com/photo-1617042375876-a13e36732a04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=50"
+        alt=""
+      />
+      <div className={styles.profile}>
+        <Avatar />
+        <strong>Alef Souza</strong>
+        <span>Web Developer</span>
+      </div>
+
+      <footer>
+        <a href="#">
+          {/* <PencilLine size={20}/> */}
+          {/* <PencilLine size={20}/> */}
+          <AppleLogo size={20} />
+          Editar seu perfil
+        </a>
+      </footer>
+    </aside>
+  );
 }
